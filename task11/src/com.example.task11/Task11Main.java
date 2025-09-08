@@ -14,6 +14,7 @@ public class Task11Main {
     }
 
     static void swap(int[] arr) {
+        if ((arr == null) || (arr.length == 0)) { return; }
         int min = Arrays.stream(arr).min().getAsInt();
         int ind_min = 0;
         for (int i = arr.length - 1; i >= 0; i--) {
